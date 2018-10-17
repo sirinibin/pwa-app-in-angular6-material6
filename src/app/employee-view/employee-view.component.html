@@ -1,0 +1,30 @@
+<h1>Details of Employee #{{employee.name}}</h1>
+
+
+<a mat-raised-button color="primary" [routerLink]="['/employees/create']" class="btn btn-primary" > <mat-icon>add</mat-icon>  Create</a> &nbsp;
+<a mat-raised-button color="primary" [routerLink]="['/employees']" class="btn btn-primary"> <mat-icon>list</mat-icon> List </a> &nbsp;
+<a mat-raised-button color="primary" [routerLink]="['/employees/update/',employee.id]" class="btn btn-primary" > <mat-icon>edit</mat-icon> Update</a> &nbsp;
+<a (click)="deleteEmployee(employee.id)" mat-raised-button color="warn"  class="btn btn-danger"> <mat-icon>delete</mat-icon>  Delete</a> &nbsp;
+<br/> <br/>
+
+<mat-list>
+    <mat-list-item>Id:{{employee.id}} </mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Name: {{employee.name}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>E-mail:{{employee.email}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Created At:{{employee.created_at}}</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Updated At:{{employee.updated_at}} </mat-list-item>
+</mat-list>
+
+<!--
+<table border="1" class="table">
+  <tr> <td align="right" >Id:</td> <td> {{employee.id}} </td> </tr>
+  <tr> <td align="right" >Name:</td> <td> {{employee.name}} </td> </tr>
+  <tr> <td align="right" > E-mail:</td> <td> {{employee.email}}  </td> </tr>
+  <tr> <td align="right" > Created At:</td> <td> {{employee.created_at}}  </td> </tr>
+  <tr> <td align="right" > Updated At:</td> <td> {{employee.updated_at}}  </td> </tr>
+</table>
+-->

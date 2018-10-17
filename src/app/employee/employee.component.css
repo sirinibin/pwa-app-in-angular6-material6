@@ -1,0 +1,8 @@
+th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .transparent .mat-dialog-container {
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.0);
+}

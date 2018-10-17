@@ -1,0 +1,197 @@
+<!--
+<mat-card class="example-card">
+    <mat-card-header >
+        <button mat-button >  
+         <img mat-card-avatar  alt="Brand" class="example-header-image" src="assets/material.svg" >
+           Material
+         </button>
+        <span class="example-fill-remaining-space"></span>
+        <button mat-button >SignUp</button>
+        <button mat-button >Login</button>
+    </mat-card-header>
+</mat-card>
+-->
+
+ <span >
+ <h2> SignUp</h2>
+ </span>
+ <form [formGroup]="user"   >
+    <mat-form-field class="full-width">
+      <input matInput placeholder="Username"   formControlName="username" >
+      <mat-error *ngIf="errors.username"  >{{errors.username}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="E-mail" formControlName="email"   >
+        <mat-error > {{errors.email}} </mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <input matInput placeholder="Password" type="password"  formControlName="password" >
+        <mat-error > {{errors.password}} </mat-error>
+      </mat-form-field>
+      <span style="align-content: center;">
+      <button mat-raised-button style="width:100%;" color="primary"  type="submit" (click)="createUser()" >Submit</button>
+      </span>
+</form>
+<mat-spinner *ngIf="isProcessing" class="centered" ></mat-spinner>
+
+  <!--
+
+<mat-card class="example-card" >
+    <mat-card-header>
+        <span>SignUp</span>
+    </mat-card-header>
+    <mat-card-content style="align-content:center;" >
+           
+
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Username" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="E-mail" >
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <input matInput placeholder="Password" type="password" >
+              </mat-form-field>
+              <button mat-button layout-align="end center" >SignUp</button>
+          </form>
+  
+          
+        <mat-card-actions>
+          
+            <button mat-button>SignUp</button>
+          </mat-card-actions>
+    </mat-card-content>
+  </mat-card> 
+-->
+
+<!--
+<mat-grid-list cols="10" rows="2"  rowHeight="10:8" >
+    <mat-grid-tile  colspan='10' >
+        1
+    </mat-grid-tile>
+   
+
+    <mat-grid-tile  colspan='10'  style="height:100vh" >4</mat-grid-tile>
+  
+</mat-grid-list>
+-->
+<!--
+  style="height:100vh"
+<mat-grid-list cols="1"  rowHeight="10:10" >
+    <mat-grid-tile colspan="3" rowspan="3" >
+        <mat-grid-tile  >4</mat-grid-tile>
+        <mat-grid-tile  >5</mat-grid-tile>
+    </mat-grid-tile>
+</mat-grid-list>
+-->
+
+<!--
+<mat-toolbar>
+     <span>Angular Material</span>
+  
+     <span class="example-fill-remaining-space"></span>
+     <span> <button mat-button >SignUp</button> </span>
+     <span> <button mat-button >Login</button> </span>
+
+  </mat-toolbar>
+  <mat-card class="example-card">
+      <mat-card-header>
+          <span>SignUp</span>
+      </mat-card-header>
+      <mat-card-content>
+             
+
+          <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="Username" >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="E-mail" >
+              </mat-form-field>
+              <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Password" type="password" >
+                </mat-form-field>
+                <button mat-button layout-align="end center" >SignUp</button>
+            </form>
+    
+            
+          <mat-card-actions>
+            
+              <button mat-button>SignUp</button>
+            </mat-card-actions>
+      </mat-card-content>
+    </mat-card> 
+  -->
+
+  <!--
+<mat-card class="example-card">
+    <mat-card-header>
+        <button mat-button >Material</button>
+        <span class="example-fill-remaining-space"></span>
+        <button mat-button >SignUp</button>
+        <button mat-button >Login</button>
+       
+      <div mat-card-avatar class="example-header-image"></div>
+      
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      
+    </mat-card-header>
+  -->
+    <!--
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  
+  </mat-card>
+-->
+
+<!--
+<div class="col-md-4 col-md-offset-4 ">
+
+
+  <h1>Signup</h1>
+  <form action="/">
+  <table class="table" border="0">
+
+      <tr>
+        <td align="right">Username:</td>
+        <td>
+          <input type="text" [(ngModel)]="user.username"  name="username" class="form-control" placeholder="Username">
+          <div  *ngIf="errors.username" style="color:red;">{{errors.username}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">E-mail:</td>
+        <td><input type="text" [(ngModel)]="user.email" name="email"  class="form-control" placeholder="Email">
+          <div  *ngIf="errors.email" style="color:red;">{{errors.email}}</div>
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Password:</td>
+        <td><input type="password" [(ngModel)]="user.password" name="password"  class="form-control" placeholder="Password">
+          <div  *ngIf="errors.password" style="color:red;">{{errors.password}}</div>
+
+        </td>
+      </tr>
+      <tr>
+        <td align="right"></td>
+        <td align="right">
+          <button type="submit" class="btn btn-primary" (click)="createUser(user)"  >Signup</button>
+        </td>
+      </tr>
+
+  </table>
+  </form>
+</div>
+-->

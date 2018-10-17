@@ -1,6 +1,20 @@
-# Material
+# Angular 6.2 / Material 6.4 UI Integrated with Node.js RESTful API ( OAuth2 )
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
+
+## Installation
+
+Run `git clone https://github.com/sirinibin/angularjs6-material6-node.js-restful-api-oauth2.git material`
+
+Run `cd material`
+
+Run `npm install`
+
+## Serve the app
+
+Run `ng serve --port 4006 --proxy-config proxy.conf.json`
+
+
 
 ## Development server
 

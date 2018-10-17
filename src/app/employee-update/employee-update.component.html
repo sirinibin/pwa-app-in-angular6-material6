@@ -1,0 +1,40 @@
+<h1>Update details of Employee <a [routerLink]="['/employees/',employee.controls['id'].value]" >#{{employee.controls['name'].value}} </a> </h1>
+
+<a [routerLink]="['/employees/create']"  mat-raised-button color="primary" > <mat-icon>add</mat-icon> Create</a>
+&nbsp;
+<a [routerLink]="['/employees']" mat-raised-button color="primary" > <mat-icon>list</mat-icon> List </a>
+&nbsp;
+<a (click)="deleteEmployee(employee.controls['id'].value)" mat-raised-button color="warn" > <mat-icon>delete</mat-icon>  Delete</a> <br/> <br/>
+
+<form [formGroup]="employee"   >
+        <mat-form-field class="full-width">
+          <input matInput placeholder="Name"   formControlName="name" >
+          <mat-error *ngIf="errors.name"  >{{errors.name}}</mat-error>
+        </mat-form-field>
+        <mat-form-field class="full-width">
+            <input matInput placeholder="E-mail" formControlName="email"   >
+            <mat-error > {{errors.email}} </mat-error>
+        </mat-form-field>
+          <span style="align-content: center;">
+          <button mat-raised-button style="width:100%;" color="primary"  type="submit" (click)="save()" >Save</button>
+          </span>
+    </form>
+    <mat-spinner *ngIf="isLoadingResults" class="centered" ></mat-spinner>
+    
+<!--
+<form  >
+<table class="table" >
+
+    <tr> <td align="right" > Name:</td> 
+        <td><input type="text"  [(ngModel)]="employee.name"  name="name" class="form-control" placeholder="Name" > 
+            <div  *ngIf="errors.name" style="color:red;">{{errors.name}}</div>
+         </td> </tr>
+    <tr> <td align="right" > E-mail:</td> <td> <input type="text" [(ngModel)]="employee.email" name="email" class="form-control" placeholder="E-mail"  >  
+        <div  *ngIf="errors.email" style="color:red;">{{errors.email}}</div>
+    </td> </tr>
+    <tr> <td align="right" ></td> <td align="right"><button type="submit" class="btn btn-primary" (click)="save(employee)"  > Save </button>  </td> </tr>
+
+</table>
+</form>
+-->
+

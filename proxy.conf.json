@@ -1,0 +1,7 @@
+{
+    "/v1/*": {
+      "target": "http://api.nodejs.mongodb.nintriva.net",
+      "secure": false,
+      "changeOrigin": true
+    }
+}
