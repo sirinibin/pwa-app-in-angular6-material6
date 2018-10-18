@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
+# Live Demo
+
+http://angular6.material6.nintriva.net/
+
 ## Installation
 
 Run `git clone https://github.com/sirinibin/angularjs6-material6-node.js-restful-api-oauth2.git material`
