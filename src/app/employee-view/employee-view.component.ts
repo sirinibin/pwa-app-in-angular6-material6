@@ -17,7 +17,7 @@ import { Employee } from '../employee';
 })
 export class EmployeeViewComponent implements OnInit {
 
-  employee={};
+  employee:Employee;
   constructor(private route: ActivatedRoute,private employeeService: EmployeeService,private router:Router) {
    
    }

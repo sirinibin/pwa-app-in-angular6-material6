@@ -26,7 +26,8 @@ export class EmployeeUpdateComponent implements OnInit {
    });
 
   errors={
-    'email':''
+    'email':'',
+    'name':''
   };
   isLoadingResults = false;
   constructor(private route: ActivatedRoute,private employeeService: EmployeeService,private router:Router) { 

@@ -23,7 +23,8 @@ export class EmployeeCreateComponent implements OnInit {
    });
 
   errors={
-    'email':''
+    'email':'',
+    'name':''
   };
 
   isLoadingResults = false;

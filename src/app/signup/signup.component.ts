@@ -32,7 +32,8 @@ export class SignupComponent implements OnInit {
 
     errors={
       'username':'',
-      'email':''
+      'email':'',
+      'password':''
     };
 
     isProcessing=false;
@@ -73,7 +74,7 @@ export class SignupComponent implements OnInit {
             (err) => {
       
               this.isProcessing=false;
-              
+
               this.errors=err.error.errors;
               
               if(this.errors.username){

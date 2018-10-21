@@ -38,7 +38,7 @@ export class AppComponent {
     this.cookieService.deleteAll();
     this.global.isGuest=true;
 
-    this.router.navigate(['login']);
+    this.router.navigate(['']);
 
   }
 

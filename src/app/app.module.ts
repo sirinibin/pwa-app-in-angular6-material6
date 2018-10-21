@@ -45,6 +45,8 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeCreateComponent } from './employee-create/employee-create.component';
 import { EmployeeUpdateComponent } from './employee-update/employee-update.component';
 import { EmployeeViewComponent } from './employee-view/employee-view.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -78,7 +80,8 @@ import { EmployeeViewComponent } from './employee-view/employee-view.component';
     MatIconModule,
     MatSidenavModule,
     FlexLayoutModule,
-    MatListModule
+    MatListModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     GlobalProvider,
