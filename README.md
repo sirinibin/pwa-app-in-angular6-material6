@@ -2,9 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
-# Live Demo
+# Warning
 
-http://pwa.angular6.material6.nintriva.net/
+ This will work fine in your local but when your going for production you must need https to serve the app otherwise you will get an error message like this "error message if you don't have ssl installed:
+"ERROR Error: "Uncaught (in promise): SecurityError: The operation is insecure.""
+and the angular service worker won't work either.
 
 ## Installation
 
