@@ -1,28 +1,31 @@
-# Angular 6.2 / Material 6.4 UI Integrated with Node.js RESTful API ( OAuth2 )
+# PWA(Progressive Web App) developed using Angular 6.2 / Material 6.4 UI Integrated with Node.js RESTful API ( OAuth2 )
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.5.
 
 # Live Demo
 
-http://angular6.material6.nintriva.net/
+http://pwa.angular6.material6.nintriva.net/
 
 ## Installation
 
-Run `git clone https://github.com/sirinibin/angularjs6-material6-node.js-restful-api-oauth2.git material`
+Run `git clone https://github.com/sirinibin/pwa-app-in-angular6-material6.git pwa`
 
-Run `cd material`
+Run `cd pwa`
 
 Run `npm install`
 
+Run `npm install -g http-server`
+
+## Build
+
+Run `ng build --prod`
+
+
 ## Serve the app
 
-Run `ng serve --port 4006 --proxy-config proxy.conf.json`
+Run ` http-server -p 8081 -c-1 dist/pwa -P http://api.nodejs.mongodb.nintriva.net`
 
 
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
